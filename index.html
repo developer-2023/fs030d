@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greetings</title>
+    <style>
+        html,body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            /* position: relative; 
+            width: 100%;
+            height: 100vh; */
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        .container img {
+            position: fixed;
+            object-fit: cover;
+            /* object-fit: contain; */
+            height: 100%;
+            width: 100%;
+        }
+        .text {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: fixed;
+            font-size: 5vw;
+            left: 20vw;
+            top: 1vh;
+            animation-name: greetings;
+            animation-duration: 144s;
+        }
+
+        @keyframes greetings {
+            from {
+                color: rgba(0, 0, 255, 0);
+            }
+            to {
+                color: rgba(255, 0, 0, 1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://source.unsplash.com/random/?puppy" alt="">
+        <div class="text">Happy Birthday my Princess</div>
+    </div>
+    <div class="controls">
+        <audio controls autoplay loop src="https://cdn.pixabay.com/audio/2023/05/11/audio_5198c12188.mp3"></audio>
+    </div>
+
+</body>
+</html>
