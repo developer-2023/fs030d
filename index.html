@@ -41,15 +41,19 @@
             right: 10px;
             top: 1vh;
             animation-name: greetings;
-            animation-duration: 14.4s;
-            color: red;
+            animation-duration: 20s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(1, 0, 0.4, 0.9);
+            color: rgba(255, 0, 0, 0);
             font-weight: bold;
             text-align: center;
         }
 
         @keyframes greetings {
             from {   
-                color: rgba(0, 0, 255, 0);
+                color: rgba(255, 0, 0, 0);
             }
             to {
                 color: rgba(255, 0, 0, 1);
